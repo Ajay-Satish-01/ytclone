@@ -4,6 +4,5 @@
   box-sizing: border-box;
 }
 .tab-sizing {
-  width: 20%;
-  height: max-content;
+  width: 100%;
 }

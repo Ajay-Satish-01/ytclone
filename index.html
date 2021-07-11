@@ -51,10 +51,10 @@
           type="text"
           name="value"
           id="value"
-          class="form-control bg-dark border-secondary px-3"
+          class="form-control bg-dark border-secondary px-3 text-white"
           placeholder="Search"
         />
-        <button class="btn rounded m-0">
+        <button class="btn rounded m-0" id="searchbutton">
           <i class="fa fa-search" aria-hidden="true"></i>
           <!-- <img src="./imgs/loupe.png" alt="search" width="17" height="20" /> -->
         </button>
@@ -67,64 +67,106 @@
         <button class="btn btn-dark">
           <i class="fa fa-th" aria-hidden="true"></i>
         </button>
-        <button class="btn btn-dark">
-          <i class="fa fa-bell fa-x" aria-hidden="true"></i>
+        <button class="btn btn-dark" id="authorize-button">
+          <i class="fa fa-sign-in" aria-hidden="true"></i>
         </button>
-        <button class="btn btn-dark">
+        <button class="btn btn-dark" id="signout-button">
           <i class="fa fa-user-circle" aria-hidden="true"></i>
         </button>
       </div>
     </header>
-    <!-- sidetabs -->
-    <div class="container-fluid float-left mt-5 border border-white tab-sizing">
-      <div class="row">
-        <div class="col">
-          <button class="btn text-white mx-1">
-            <i class="fa fa-home text-white mr-3" aria-hidden="true"></i>Home
-          </button>
+    <div class="row" id="videocontainer">
+      <div class="col-3 text-center">
+        <!-- sidetabs -->
+        <div class="container-fluid float-left mt-5 tab-sizing">
+          <div class="row">
+            <div
+              class="
+                col
+                text-center
+                justify-content-center
+                align-content-center
+              "
+            >
+              <button class="btn text-white mx-1 tab-sizing">
+                <i class="fa fa-home text-white mr-3" aria-hidden="true"></i
+                >Home
+              </button>
 
-          <!-- <button class="btn text-white mx-1">
+              <!-- <button class="btn text-white mx-1">
              <i class="fa fa-home text-white mr-3" aria-hidden="true"></i>Home -->
-        </div>
-      </div>
-      <!-- 1 row -->
+            </div>
+          </div>
+          <!-- 1 row -->
 
-      <div class="row">
-        <div class="col">
-          <button class="btn text-white mx-1">
-            <i class="fa fa-compass text-white mr-3" aria-hidden="true"></i
-            >Explore
-          </button>
-        </div>
-      </div>
+          <div class="row">
+            <div
+              class="
+                col
+                text-center
+                justify-content-center
+                align-content-center
+              "
+            >
+              <button class="btn text-white mx-1 tab-sizing">
+                <i class="fa fa-compass text-white mr-3" aria-hidden="true"></i
+                >Explore
+              </button>
+            </div>
+          </div>
 
-      <div class="row">
-        <div class="col">
-          <button class="btn text-white mx-1">
-            <i class="fa fa-youtube-play mr-3" aria-hidden="true"></i>Subs
-          </button>
-        </div>
-      </div>
-      <hr class="bg-white m-3" />
+          <div class="row">
+            <div
+              class="
+                col
+                text-center
+                justify-content-center
+                align-content-center
+              "
+            >
+              <button class="btn text-white mx-1 tab-sizing">
+                <i class="fa fa-youtube-play mr-3" aria-hidden="true"></i>Subs
+              </button>
+            </div>
+          </div>
+          <hr class="bg-white m-3" />
 
-      <div class="row">
-        <div class="col">
-          <button class="btn text-white mx-1">
-            <i class="fa fa-history mr-3" aria-hidden="true"></i>History
-          </button>
-        </div>
-      </div>
+          <div class="row">
+            <div
+              class="
+                col
+                text-center
+                justify-content-center
+                align-content-center
+              "
+            >
+              <button class="btn text-white mx-1 tab-sizing">
+                <i class="fa fa-history mr-3" aria-hidden="true"></i>History
+              </button>
+            </div>
+          </div>
 
-      <div class="row">
-        <div class="col">
-          <button class="btn text-white mx-1">
-            <i class="fa fa-clock-o mr-3" aria-hidden="true"></i>Watch later
-          </button>
+          <div class="row">
+            <div
+              class="
+                col
+                text-center
+                justify-content-center
+                align-content-center
+              "
+            >
+              <button class="btn text-white mx-1 tab-sizing">
+                <i class="fa fa-clock-o mr-3" aria-hidden="true"></i>Watch later
+              </button>
+            </div>
+          </div>
         </div>
+        <div id="channeldata"></div>
       </div>
+      <!-- col3 end -->
+      <!-- <div class="col-9" id="col"></div> -->
     </div>
-    <!-- end of sidetabs -->
-    <section class="container" id="section"></section>
+
     <!-- Optional JavaScript -->
     <script src="script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
